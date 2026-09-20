@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Darko law firm&amp;chambers | Accra, Ghana</title>
+<meta name="description" content="Darko law firm&amp;chambers — Ghana-based trial lawyers handling civil litigation, family law, criminal defense, real estate, immigration, and business matters.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1F23;
+    --ink-soft:#4A5259;
+    --paper:#F6F3EB;
+    --panel:#FFFFFF;
+    --navy:#0E2238;
+    --navy-2:#153554;
+    --brass:#B4862F;
+    --brass-light:#D9AE5C;
+    --teal:#2C5A5C;
+    --line:#DEDACB;
+    --maroon:#7A3B34;
+    --sage:#5C6B4E;
+    --radius-s:2px;
+    --radius-m:4px;
+    --max:1180px;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',Georgia,'Times New Roman',serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0;
+    color:var(--navy);
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  button{font-family:inherit;cursor:pointer;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+
+  /* ---------- Top utility bar ---------- */
+  .utility{
+    background:var(--navy);
+    color:#D9D2BE;
+    font-size:13px;
+  }
+  .utility .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:8px 32px;gap:16px;flex-wrap:wrap;
+  }
+  .utility a{color:#D9D2BE;}
+  .utility a:hover{color:#fff;}
+  .utility .u-left{display:flex;gap:24px;flex-wrap:wrap;}
+  .utility .u-left span{white-space:nowrap;}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+    background:rgba(246,243,235,0.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 32px;gap:24px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:38px;height:38px;flex:none;
+  }
+  .brand-text{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;color:var(--navy);
+    letter-spacing:-0.01em;
+  }
+  .brand-text small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:11px;color:var(--brass);letter-spacing:.04em;}
+  nav.primary{display:flex;gap:30px;align-items:center;}
+  nav.primary a{
+    font-size:14.5px;font-weight:500;color:var(--ink-soft);
+    padding:6px 0;border-bottom:2px solid transparent;
+  }
+  nav.primary a:hover{color:var(--navy);border-bottom-color:var(--brass);}
+  .cta-btn{
+    background:var(--navy);color:#fff;padding:12px 22px;border-radius:var(--radius-s);
+    font-size:14.5px;font-weight:600;border:1px solid var(--navy);
+    display:inline-block;white-space:nowrap;
+  }
+  .cta-btn:hover{background:var(--navy-2);}
+  .cta-btn.outline{background:transparent;color:var(--navy);}
+  .cta-btn.outline:hover{background:var(--navy);color:#fff;}
+  .cta-btn.brass{background:var(--brass);border-color:var(--brass);color:#1B1F23;}
+  .cta-btn.brass:hover{background:var(--brass-light);}
+  .menu-toggle{display:none;background:none;border:none;padding:8px;}
+  .menu-toggle span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:76px 0 92px;}
+  .hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end;}
+  .eyebrow-plain{font-size:14px;color:var(--brass);font-weight:600;margin-bottom:18px;}
+  .hero h1{font-size:clamp(38px,5vw,60px);max-width:14ch;}
+  .hero h1 em{font-style:italic;color:var(--brass);}
+  .hero-sub{margin-top:22px;font-size:18px;color:var(--ink-soft);max-width:46ch;}
+  .hero-actions{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap;}
+  .stat-panel{
+    background:var(--navy);color:#fff;border-radius:var(--radius-m);
+    padding:34px 30px;
+  }
+  .stat-panel .stat{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14);}
+  .stat-panel .stat:last-child{border-bottom:none;padding-bottom:0;}
+  .stat-panel .stat:first-child{padding-top:0;}
+  .stat-num{font-family:'Fraunces',Georgia,serif;font-size:34px;color:var(--brass-light);}
+  .stat-label{font-size:13.5px;color:#C9D2D8;margin-top:2px;}
+
+  /* ---------- Section shell ---------- */
+  section{padding:88px 0;}
+  section.alt{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:52px;align-items:end;}
+  .sec-head h2{font-size:clamp(28px,3.4vw,40px);max-width:14ch;}
+  .sec-head .sec-copy{color:var(--ink-soft);font-size:16.5px;max-width:44ch;}
+
+  /* ---------- Practice areas ---------- */
+  .practice-list{display:flex;flex-direction:column;border-top:1px solid var(--line);}
+  .practice-row{
+    display:grid;grid-template-columns:280px 1fr 120px;gap:28px;
+    padding:30px 0;border-bottom:1px solid var(--line);align-items:center;
+  }
+  .practice-row .p-icon{width:40px;height:40px;color:var(--teal);}
+  .practice-row h3{font-size:21px;display:flex;align-items:center;gap:16px;}
+  .practice-row p{color:var(--ink-soft);font-size:15px;}
+  .practice-row .p-link{font-size:14px;font-weight:600;color:var(--navy);white-space:nowrap;justify-self:end;}
+  .practice-row .p-link:hover{color:var(--brass);}
+
+  /* ---------- About / values ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .about-copy p{color:var(--ink-soft);font-size:16.5px;}
+  .about-copy p + p{margin-top:16px;}
+  .values{display:flex;flex-direction:column;gap:26px;}
+  .value-item{display:grid;grid-template-columns:52px 1fr;gap:18px;}
+  .value-num{
+    font-family:'Fraunces',Georgia,serif;font-size:15px;color:var(--brass);
+    border:1px solid var(--line);border-radius:50%;width:40px;height:40px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .value-item h4{font-size:17px;margin-bottom:4px;}
+  .value-item p{color:var(--ink-soft);font-size:14.5px;}
+
+  /* ---------- Attorneys ---------- */
+  .attorney-row{
+    display:grid;grid-template-columns:200px 1fr;gap:40px;
+    padding:40px 0;border-bottom:1px solid var(--line);
+  }
+  .attorney-row:first-child{border-top:1px solid var(--line);}
+  .attorney-row.reverse .avatar-wrap{order:2;}
+  .avatar-wrap{width:200px;}
+  .avatar-wrap svg{border-radius:var(--radius-m);}
+  .att-name{font-size:24px;}
+  .att-role{color:var(--brass);font-weight:600;font-size:13.5px;letter-spacing:.02em;margin-top:4px;}
+  .att-bio{color:var(--ink-soft);font-size:15px;margin-top:14px;max-width:60ch;}
+  .att-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:16px;font-size:13.5px;color:var(--ink-soft);}
+  .att-meta span{display:flex;align-items:center;gap:6px;}
+  .att-meta svg{width:15px;height:15px;color:var(--teal);}
+
+  /* ---------- Results / testimonials ---------- */
+  .results-top{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:56px;}
+  .results-top .r-cell{background:var(--panel);padding:30px 24px;}
+  .r-num{font-family:'Fraunces',Georgia,serif;font-size:32px;color:var(--navy);}
+  .r-label{font-size:13.5px;color:var(--ink-soft);margin-top:6px;}
+  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .t-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:28px;}
+  .t-quote{font-size:15.5px;color:var(--ink);font-style:italic;}
+  .t-who{margin-top:18px;font-size:13.5px;color:var(--ink-soft);font-weight:600;}
+  .t-case{font-size:12.5px;color:var(--brass);margin-top:2px;}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:820px;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%;background:none;border:none;text-align:left;
+    padding:22px 0;display:flex;justify-content:space-between;align-items:center;
+    font-family:'Fraunces',Georgia,serif;font-size:18px;color:var(--navy);gap:20px;
+  }
+  .faq-q .plus{flex:none;width:22px;height:22px;position:relative;}
+  .faq-q .plus::before,.faq-q .plus::after{
+    content:'';position:absolute;background:var(--brass);top:50%;left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .faq-q .plus::before{width:14px;height:2px;}
+  .faq-q .plus::after{width:2px;height:14px;transition:transform .2s ease;}
+  .faq-item.open .plus::after{transform:translate(-50%,-50%) rotate(90deg) scale(0);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .faq-item.open .faq-a{max-height:240px;}
+  .faq-a p{color:var(--ink-soft);font-size:15px;padding-bottom:22px;max-width:68ch;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .office-card{border:1px solid var(--line);border-radius:var(--radius-m);padding:26px;background:var(--panel);margin-bottom:16px;}
+  .office-card h4{font-size:16px;}
+  .office-card p{color:var(--ink-soft);font-size:14.5px;margin-top:8px;}
+  form.contact-form{display:flex;flex-direction:column;gap:16px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  label{font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;}
+  input,select,textarea{
+    width:100%;border:1px solid var(--line);border-radius:var(--radius-s);
+    padding:12px 14px;font-family:inherit;font-size:14.5px;background:var(--panel);color:var(--ink);
+  }
+  textarea{resize:vertical;min-height:110px;}
+  input:focus,select:focus,textarea:focus{border-color:var(--brass);}
+  .disclaimer-box{font-size:12.5px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);padding:14px 16px;border-radius:var(--radius-s);}
+  .form-status{font-size:14px;font-weight:600;display:none;padding:12px 14px;border-radius:var(--radius-s);}
+  .form-status.show{display:block;}
+  .form-status.ok{background:#EAF1E4;color:var(--sage);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#C9D2D8;padding:64px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;}
+  .footer-brand{font-family:'Fraunces',Georgia,serif;font-size:20px;color:#fff;margin-bottom:14px;}
+  .footer-grid p{font-size:14px;color:#A9B4BC;}
+  .footer-col h5{color:#fff;font-size:13.5px;letter-spacing:.03em;margin-bottom:16px;}
+  .footer-col a{display:block;font-size:14px;color:#A9B4BC;margin-bottom:10px;overflow-wrap:anywhere;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{
+    margin-top:52px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#8695A0;
+  }
+  .bar-note{font-size:12px;color:#8695A0;max-width:900px;margin-top:16px;line-height:1.6;}
+
+  /* ---------- Utility ---------- */
+  .skip-link{
+    position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:12px 18px;z-index:100;
+  }
+  .skip-link:focus{left:16px;top:16px;}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none!important;}
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    nav.primary{display:none;}
+    .menu-toggle{display:block;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;}
+    .results-top{grid-template-columns:repeat(2,1fr);}
+    .testimonials{grid-template-columns:1fr;}
+    .practice-row{grid-template-columns:1fr;gap:10px;}
+    .practice-row .p-link{justify-self:start;}
+    .attorney-row,.attorney-row.reverse{grid-template-columns:1fr;}
+    .avatar-wrap{width:140px;order:0!important;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .form-row{grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 20px;}
+    .nav-row{padding:14px 20px;}
+    .hero{padding:48px 0 60px;}
+    section{padding:60px 0;}
+    .sec-head{grid-template-columns:1fr;}
+    .results-top{grid-template-columns:1fr 1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    .utility .wrap{flex-direction:column;align-items:flex-start;gap:6px;}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap">
+    <div class="u-left">
+      <span>Accra, Ghana</span>
+      <span>Mon&ndash;Fri, 8:30am&ndash;5:30pm</span>
+      <span>We speak English, Twi &amp; Ga</span>
+    </div>
+    <div class="u-left">
+      <a href="tel:+233200285615">+233 20 0285 615</a>
+      <a href="mailto:Attyvictorchambers@gmail.com">Attyvictorchambers@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="nav-row wrap">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="3" fill="#0E2238"/>
+        <path d="M20 8L10 13V19C10 25.5 14.2 30.8 20 32C25.8 30.8 30 25.5 30 19V13L20 8Z" stroke="#D9AE5C" stroke-width="1.6" fill="none"/>
+        <path d="M20 14V26M15 17.5H25M16.5 26H23.5" stroke="#D9AE5C" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">Darko<small>law firm&amp;chambers</small></span>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <a href="#practice">Practice Areas</a>
+      <a href="#about">About</a>
+      <a href="#attorneys">Attorneys</a>
+      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta-btn" href="#contact">Free Consultation</a>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <div id="top" class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow-plain">Trial lawyers based in Ghana, serving clients nationwide</div>
+        <h1>Steady counsel for the moments that decide what happens <em>next.</em></h1>
+        <p class="hero-sub">Darko law firm&amp;chambers represents individuals, families, and businesses across civil litigation, family law, criminal defense, real estate, immigration, and business law &mdash; with the preparation of a trial team and the attention of a firm that keeps its caseload small on purpose.</p>
+        <div class="hero-actions">
+          <a class="cta-btn brass" href="#contact">Schedule a Free Consultation</a>
+          <a class="cta-btn outline" href="#attorneys">Meet the Attorneys</a>
+        </div>
+      </div>
+      <div class="stat-panel">
+        <div class="stat"><div class="stat-num">62+</div><div class="stat-label">Combined years of legal practice</div></div>
+        <div class="stat"><div class="stat-num">1,900+</div><div class="stat-label">Matters resolved for clients</div></div>
+        <div class="stat"><div class="stat-num">4.9 / 5</div><div class="stat-label">Average client review rating</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE AREAS -->
+  <section id="practice">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Six practice areas, one point of contact</h2>
+        <p class="sec-copy">Most legal problems touch more than one area of law. Our attorneys work across practice groups under one roof, so your case does not lose momentum at a hand-off.</p>
+      </div>
+      <div class="practice-list">
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 20v-6h6v6"/></svg>Business &amp; Corporate Law</h3>
+          <p>Entity formation, contracts, partnership disputes, and general counsel services for small and mid-sized companies.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-4.6-9.5-9.1C1 8.4 2.6 5 6 5c2 0 3.3 1 4 2 .7-1 2-2 4-2 3.4 0 5 3.4 3.5 6.9C19 16.4 12 21 12 21z"/></svg>Family Law</h3>
+          <p>Divorce, custody, child support, and adoption handled with a focus on keeping families stable through the process.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M9 20v-5h6v5M4 10l8-6 8 6"/></svg>Real Estate Law</h3>
+          <p>Residential and commercial closings, title disputes, landlord-tenant matters, and zoning issues.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z"/></svg>Immigration Law</h3>
+          <p>Work and residence permits, dual citizenship, naturalization, and representation before the Ghana Immigration Service.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>Criminal Defense</h3>
+          <p>Defense for felony and misdemeanor charges, bail applications, and appeals across the Ashanti and Greater Accra regions.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+        <div class="practice-row">
+          <h3><svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 8v9a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>Civil Litigation</h3>
+          <p>Personal injury, contract disputes, employment claims, and appeals, from filing through trial.</p>
+          <a class="p-link" href="#contact">Learn more &rsaquo;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="alt">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="eyebrow-plain">About the firm</div>
+          <h2 style="margin-bottom:22px;font-size:clamp(26px,3vw,34px);">Founded on the idea that clients deserve their lawyer's full attention</h2>
+          <div class="about-copy">
+            <p>Darko law firm&amp;chambers was founded in 2011 by Darko Victor and Marcus Bennett, two Ghanaian attorneys who met while pupillaging at the same chambers and later built a practice on the same principle: a client should never feel like a file number.</p>
+            <p>Today the firm has grown to six lawyers across six practice areas, but the caseload per attorney is still capped well below the local average, so every client gets direct access to the lawyer handling their matter &mdash; not a rotating cast of clerks.</p>
+            <p>We are proud to be a Ghanaian firm serving clients nationwide, from families to growing local businesses.</p>
+          </div>
+        </div>
+        <div class="values">
+          <div class="value-item">
+            <div class="value-num">01</div>
+            <div><h4>Direct access to your attorney</h4><p>You will have the cell number of the attorney on your case, not just an intake line.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-num">02</div>
+            <div><h4>Flat-fee clarity where possible</h4><p>We quote flat fees for defined matters and explain hourly billing plainly when it applies.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-num">03</div>
+            <div><h4>Trial-ready from day one</h4><p>Cases are prepared as if they are going to trial, which is exactly why most of them settle well.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-num">04</div>
+            <div><h4>Community-rooted</h4><p>We offer a reduced-fee clinic on the first Saturday of every month for the communities we serve.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTORNEYS -->
+  <section id="attorneys">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Meet the attorneys</h2>
+        <p class="sec-copy">Six lawyers, six areas of focus, one firm. Every attorney at Darko law firm&amp;chambers is enrolled at the Ghana Bar and regulated by the General Legal Council.</p>
+      </div>
+
+      <!-- Attorney 1 -->
+      <div class="attorney-row">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darko Victor">
+            <rect width="200" height="200" fill="#0E2238"/>
+            <circle cx="160" cy="30" r="70" fill="#153554"/>
+            <circle cx="100" cy="100" r="52" fill="#D9AE5C"/>
+            <text x="100" y="116" font-family="Fraunces, Georgia, serif" font-size="42" fill="#0E2238" text-anchor="middle">DV</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Darko Victor</h3>
+          <div class="att-role">Founding Partner &middot; Civil Litigation</div>
+          <p class="att-bio">Darko co-founded the firm in 2011 after eight years in litigation practice in Ghana. He leads the litigation team and has taken more than 40 cases to trial, with a focus on personal injury and employment disputes.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2003</span>
+            <span>LL.B., University of Ghana &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attorney 2 -->
+      <div class="attorney-row reverse">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcus Bennett">
+            <rect width="200" height="200" fill="#2C5A5C"/>
+            <rect x="0" y="140" width="200" height="60" fill="#254c4e"/>
+            <circle cx="100" cy="95" r="52" fill="#F6F3EB"/>
+            <text x="100" y="111" font-family="Fraunces, Georgia, serif" font-size="42" fill="#2C5A5C" text-anchor="middle">MB</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Marcus Bennett</h3>
+          <div class="att-role">Founding Partner &middot; Business &amp; Corporate Law</div>
+          <p class="att-bio">Marcus advises founders and family-owned businesses on formation, contracts, and disputes between partners. Before co-founding the firm, he spent five years in-house at a logistics company headquartered in Accra.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2005</span>
+            <span>LL.B., KNUST &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attorney 3 -->
+      <div class="attorney-row">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Angela Whitfield">
+            <rect width="200" height="200" fill="#7A3B34"/>
+            <polygon points="0,200 200,200 200,120 0,180" fill="#663029"/>
+            <circle cx="100" cy="92" r="52" fill="#F6F3EB"/>
+            <text x="100" y="108" font-family="Fraunces, Georgia, serif" font-size="42" fill="#7A3B34" text-anchor="middle">AW</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Angela Whitfield</h3>
+          <div class="att-role">Partner &middot; Family Law</div>
+          <p class="att-bio">Angela leads the family law practice, handling custody, divorce, and adoption matters. She is a certified mediator and often works to resolve custody disputes without a contested court hearing.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2009</span>
+            <span>LL.B., GIMPA &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attorney 4 -->
+      <div class="attorney-row reverse">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terrence Coleman">
+            <rect width="200" height="200" fill="#5C6B4E"/>
+            <circle cx="30" cy="170" r="90" fill="#4c5941"/>
+            <circle cx="100" cy="95" r="52" fill="#F6F3EB"/>
+            <text x="100" y="111" font-family="Fraunces, Georgia, serif" font-size="42" fill="#5C6B4E" text-anchor="middle">TC</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Terrence Coleman</h3>
+          <div class="att-role">Associate &middot; Criminal Defense</div>
+          <p class="att-bio">Terrence represents clients facing felony and misdemeanor charges across the Ashanti and Greater Accra regions, with particular experience in bail applications and appeals.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2016</span>
+            <span>LL.B., KNUST &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attorney 5 -->
+      <div class="attorney-row">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diane Okafor">
+            <rect width="200" height="200" fill="#153554"/>
+            <rect x="0" y="0" width="200" height="60" fill="#0E2238"/>
+            <circle cx="100" cy="100" r="52" fill="#D9AE5C"/>
+            <text x="100" y="116" font-family="Fraunces, Georgia, serif" font-size="42" fill="#0E2238" text-anchor="middle">DO</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Diane Okafor</h3>
+          <div class="att-role">Associate &middot; Real Estate Law</div>
+          <p class="att-bio">Diane handles residential and commercial closings, title disputes, and landlord-tenant matters. She previously worked as in-house counsel for a regional title insurance company.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2018</span>
+            <span>LL.B., University of Cape Coast &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attorney 6 -->
+      <div class="attorney-row reverse">
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Malik Johnson">
+            <rect width="200" height="200" fill="#B4862F"/>
+            <polygon points="0,0 200,0 200,70 0,40" fill="#9c7328"/>
+            <circle cx="100" cy="105" r="52" fill="#0E2238"/>
+            <text x="100" y="121" font-family="Fraunces, Georgia, serif" font-size="42" fill="#D9AE5C" text-anchor="middle">MJ</text>
+          </svg>
+        </div>
+        <div>
+          <h3 class="att-name">Malik Johnson</h3>
+          <div class="att-role">Associate &middot; Immigration Law</div>
+          <p class="att-bio">Malik represents individuals and families on residence and work permits, dual citizenship, and matters before the Ghana Immigration Service. He is fluent in Twi and Ga and volunteers monthly at the firm's community legal clinic.</p>
+          <div class="att-meta">
+            <span>Called to the Ghana Bar, 2019</span>
+            <span>LL.B., Central University &middot; B.L., Ghana School of Law</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Results clients can point to</h2>
+        <p class="sec-copy">Past results do not guarantee a future outcome, but they show how we approach a case. Figures below reflect matters resolved over the last five years.</p>
+      </div>
+
+      <div class="results-top">
+        <div class="r-cell"><div class="r-num">GH&#8373;8.5M</div><div class="r-label">Largest personal injury settlement</div></div>
+        <div class="r-cell"><div class="r-num">89%</div><div class="r-label">Criminal cases resolved without trial conviction</div></div>
+        <div class="r-cell"><div class="r-num">310+</div><div class="r-label">Real estate closings handled last year</div></div>
+        <div class="r-cell"><div class="r-num">96%</div><div class="r-label">Immigration petitions approved</div></div>
+      </div>
+
+      <div class="testimonials">
+        <div class="t-card">
+          <p class="t-quote">"Darko kept me informed at every step and never made me feel rushed, even during the parts of my case that dragged on for months."</p>
+          <div class="t-who">R. Thompson</div>
+          <div class="t-case">Civil Litigation Client</div>
+        </div>
+        <div class="t-card">
+          <p class="t-quote">"Angela helped my family reach a custody agreement without ever setting foot in a courtroom. I am grateful for how calm she stayed throughout."</p>
+          <div class="t-who">K. Alvarez</div>
+          <div class="t-case">Family Law Client</div>
+        </div>
+        <div class="t-card">
+          <p class="t-quote">"Marcus reviewed our partnership agreement line by line and caught two clauses that would have cost us later. Worth every dollar."</p>
+          <div class="t-who">D. Osei, Founder</div>
+          <div class="t-case">Business Law Client</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Frequently asked questions</h2>
+        <p class="sec-copy">Answers to what most new clients ask before their first consultation.</p>
+      </div>
+      <div class="faq">
+        <div class="faq-item open">
+          <button class="faq-q" aria-expanded="true">Is the initial consultation really free?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. The first consultation, whether by phone or in person, is free and typically runs 30 to 45 minutes. There is no obligation to hire the firm afterward.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does your firm bill for services?<span class="plus"></span></button>
+          <div class="faq-a"><p>It depends on the matter. Personal injury cases are typically handled on contingency, meaning we only get paid if you do. Many family law, real estate, and business matters are billed as a flat fee, which we quote up front. Litigation that requires an unpredictable amount of court time is billed hourly, and we explain that rate before any work begins.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Which courts and counties do you practice in?<span class="plus"></span></button>
+          <div class="faq-a"><p>Most of our caseload is in the Greater Accra and Ashanti regions, and we regularly appear before the Circuit and High Courts in Accra and Kumasi, as well as the Ghana Immigration Service. We can discuss representation outside this area on a case-by-case basis.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer payment plans?<span class="plus"></span></button>
+          <div class="faq-a"><p>For flat-fee matters, we can typically split payment into two or three installments tied to milestones in the case. Ask your attorney about this during your consultation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What should I bring to my first appointment?<span class="plus"></span></button>
+          <div class="faq-a"><p>Bring any documents related to your matter &mdash; contracts, police reports, court notices, or correspondence &mdash; along with a photo ID. If you are unsure what applies, bring everything you have and we will sort through it together.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Talk to an attorney this week</h2>
+        <p class="sec-copy">Fill out the form and the right attorney for your matter will reach out within one business day, or call the office directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="office-card">
+            <h4>Ridge, Accra Office</h4>
+            <p>12 Independence Avenue, Ridge<br>Accra, Greater Accra &middot; GPS: GA-184-3021</p>
+            <p>+233 20 0285 615 &middot; Mon&ndash;Fri, 8:30am&ndash;5:30pm</p>
+          </div>
+          <div class="office-card">
+            <h4>Adum, Kumasi Satellite Office</h4>
+            <p>24 Harper Road, Adum<br>Kumasi, Ashanti Region &middot; GPS: AK-039-5028</p>
+            <p>By appointment only &middot; 0244 550 142</p>
+          </div>
+          <p class="bar-note">Darko law firm&amp;chambers is a private law firm licensed to practice in Ghana. Submitting this form does not create an attorney-client relationship. Please do not include confidential information about your matter until representation has been confirmed.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div>
+              <label for="fname">First name</label>
+              <input id="fname" name="fname" type="text" required>
+            </div>
+            <div>
+              <label for="lname">Last name</label>
+              <input id="lname" name="lname" type="text" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required>
+            </div>
+          </div>
+          <div>
+            <label for="area">Practice area</label>
+            <select id="area" name="area">
+              <option>Business &amp; Corporate Law</option>
+              <option>Family Law</option>
+              <option>Real Estate Law</option>
+              <option>Immigration Law</option>
+              <option>Criminal Defense</option>
+              <option>Civil Litigation</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="details">Briefly describe your situation</label>
+            <textarea id="details" name="details" placeholder="What's going on, and what would you like help with?"></textarea>
+          </div>
+          <div class="disclaimer-box">By submitting, you agree to be contacted by Darko law firm&amp;chambers about your inquiry. This form is not a substitute for legal advice and does not establish representation.</div>
+          <button type="submit" class="cta-btn brass" style="align-self:flex-start;">Request Consultation</button>
+          <div class="form-status ok" id="formStatus">Thanks &mdash; your request has been received. An attorney will follow up within one business day.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Darko law firm&amp;chambers</div>
+        <p>Trial lawyers serving clients across Ghana since 2011.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Practice Areas</h5>
+        <a href="#practice">Business Law</a>
+        <a href="#practice">Family Law</a>
+        <a href="#practice">Real Estate Law</a>
+        <a href="#practice">Immigration Law</a>
+        <a href="#practice">Criminal Defense</a>
+        <a href="#practice">Civil Litigation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Firm</h5>
+        <a href="#about">About</a>
+        <a href="#attorneys">Attorneys</a>
+        <a href="#results">Case Results</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="tel:+233200285615">+233 20 0285 615</a>
+        <a href="mailto:Attyvictorchambers@gmail.com">Attyvictorchambers@gmail.com</a>
+        <a href="#contact">12 Independence Avenue, Ridge, Accra</a>
+      </div>
+    </div>
+    <p class="bar-note">DARKO LAW FIRM&amp;CHAMBERS is a limited liability company, incorporated and registered under the laws of the Republic of Ghana with registration number CS425442014. The Firm is licensed by the General Legal Council to provide legal services.</p>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Darko law firm&amp;chambers. All rights reserved.</span>
+      <span>Privacy Policy &middot; Terms of Use &middot; Sitemap</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  // Mobile menu toggle -> simple reveal of nav links
+  var toggle = document.querySelector('.menu-toggle');
+  var nav = document.querySelector('nav.primary');
+  toggle.addEventListener('click', function(){
+    var open = nav.style.display === 'flex';
+    nav.style.display = open ? 'none' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position = 'absolute';
+    nav.style.top = '100%';
+    nav.style.left = '0';
+    nav.style.right = '0';
+    nav.style.background = '#F6F3EB';
+    nav.style.padding = '20px 32px';
+    nav.style.borderBottom = '1px solid #DEDACB';
+  });
+
+  // Contact form (front-end only demo)
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formStatus').classList.add('show');
+    e.target.reset();
+  });
+</script>
+
+</body>
+</html>
